@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Jersey+10&display=swap');
+
+/**{
+  outline:solid  red 1px;
+}
+  */
+body{
+  background-color:#141c3a ;
+  color:white;
+}
+.header{
+  display:flex;
+  height:100%;
+  border-bottom:1px outset gray;
+}
+/* removes the margin for more compact header */
+h1{
+  margin:0;
+}
+
+.logo{
+  font-family: "Cedarville Cursive", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.content{
+  display:flex;
+  text-decoration: none;
+  align-items: start;
+}
+
+.links{
+  margin-left:auto;
+  list-style-type: none; 
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:25px;
+
+
+}
