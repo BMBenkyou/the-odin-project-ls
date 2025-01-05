@@ -2,8 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Jersey+10&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 
-*{
-}
+
 
 body{
   font-family: "Roboto", serif;
@@ -112,18 +111,68 @@ p{
 }
 .artwork-container{
   display:flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
+  gap:20px;
+  padding-bottom: 50px;
+
+}
+.title{
+  display:flex;
+  justify-content: center;
 }
 .artwork-container h2{
   display:flex;
   justify-content:center;
 }
-.artwork-pic{
+.artwork-info{
   display:flex;
+  flex-direction: column;
+  align-items: center;
   gap:20px;
+  width:200px;
 }
-.artwork-pic img{
+.artwork-info img{
+  display: flex;
+  justify-content: center;
   width:200px;
   height:200px;
+}
+.text{
+  font-style: italic;
+  font-size:small;
+}
+
+.sec-3{
+  color:	#324c5c;
+}
+.quote{
+  margin-left:100px;
+  font-weight: bolder;
+  font-size:30px;
+  padding-top:20px;
+  padding-bottom: 0px;
+}
+.quote p{
+  font-style: italic;
+}
+.modal{
+  background-color:#f6e370;
+  display:flex;
+  gap:50px;
+  margin:100px;
+  border-radius: 10px;
+  color:black;
+  justify-content: center;
+}
+.notify{
+  display: flex;
+  align-items: center;
+}
+.notify-btn{
+  background-color: black;
+  color:white;
+  text-decoration: none;
+  border:none;
+  border-radius:8px;
+  width:100px;
 }
