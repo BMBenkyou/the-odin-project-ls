@@ -1,6 +1,5 @@
-#The Odin Project Summary
 
-# The Odin Project Projects
+# Compilation of Projects from TOP
 
 | Title                | Description                          | Concepts Discussed     | Technologies Used | Live Page                              | Repository                          |
 |----------------------|--------------------------------------|------------------------|-------------------|----------------------------------------|-------------------------------------|
