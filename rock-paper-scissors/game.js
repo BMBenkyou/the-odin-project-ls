@@ -1,3 +1,5 @@
+
+/* Todo- add styling  */
 console.log("Welcome to the rock, paper, scissors");
 
 /* Global variables for initialization of human and computer score */
