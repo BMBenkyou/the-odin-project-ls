@@ -1,10 +1,22 @@
 
-/* Todo- add styling  */
+
 console.log("Welcome to the rock, paper, scissors");
 
 /* Global variables for initialization of human and computer score */
 let humanScore = 0;
 let computerScore = 0;
+
+
+// TODO: get the buttons of selection
+//
+let selectBtn = document.querySelectorAll("button");
+
+selectBtn.forEach((button) =>{
+    button.addEventListener("click", () =>{
+        getHumanChoice(button.textContent);
+    });
+});
+//
 
 
 function playRound(humanChoice,computerChoice){
@@ -41,9 +53,8 @@ function playGame(human,comp){
     playRound(human,comp);
 }
 
-function getHumanChoice(){
-    let int_choice =prompt("Please enter your choice \n1: rock\n2: paper\n3: scissors");
-    return int_choice;
+function getHumanChoice(buttonText){
+    console.log(buttonText);
 }
 
 let humanSelection;
