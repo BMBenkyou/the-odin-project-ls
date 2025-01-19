@@ -1,21 +1,16 @@
 
-
 console.log("Welcome to the rock, paper, scissors");
 
 /* Global variables for initialization of human and computer score */
 let humanScore = 0;
 let computerScore = 0;
+let humanSelection;
+let computerSelection;
 
 
-// TODO: get the buttons of selection
-//
+
 let selectBtn = document.querySelectorAll("button");
 
-selectBtn.forEach((button) =>{
-    button.addEventListener("click", () =>{
-        getHumanChoice(button.textContent);
-    });
-});
 //
 
 
@@ -53,16 +48,26 @@ function playGame(human,comp){
     playRound(human,comp);
 }
 
-function getHumanChoice(buttonText){
-    console.log(buttonText);
-}
-
-let humanSelection;
-let computerSelection;
-
-for (let i=0; i<5; i++){
-    humanSelection=getHumanChoice();
+selectBtn.forEach((button) =>{
+    button.addEventListener("click", () =>{
+    humanSelection = getHumanChoice(button.textContent);
     computerSelection = getComputerChoice();
-    playGame(humanSelection, computerSelection);
+    playGame(humanSelection,computerSelection);
+    });
+});
+
+function getHumanChoice(buttonText){
+    if (buttonText == "ROCK"){
+        return 1;
+    }
+    else if (buttonText == "PAPER"){
+        return 2;
+    }
+    else{
+        return 3;
+    }
 }
+
+
+
 
