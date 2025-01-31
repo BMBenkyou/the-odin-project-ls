@@ -6,6 +6,7 @@
 
 body{
   display:flex;
+  flex:2;
   margin:20px;
   justify-content:center;
   background-color:#E3FEF9;
@@ -40,6 +41,16 @@ label{
   font-size:10px;
 }
 
+button{
+  margin-top:10px;
+  border-radius:6px;
+  color:white;
+  width:60px;
+  background-color:#039C87;
+  border:none;
+  
+}
 .column {
   flex: 50%;
 }
+
